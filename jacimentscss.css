@@ -58,7 +58,8 @@ nav{
     background-color: green;
 }
 
-footer{background-color: yellow;
+footer{background-color: rgb(128, 106, 83);
+       font-weight: bolder;
        position: absolute;
        bottom: 0;
        width: 100%;
