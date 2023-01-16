@@ -18,62 +18,34 @@ nav{
 }
 
 ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0%;
-    justify-content: center;
-    width: 100%;
-}
-
-li{
-    line-height:50px;
-	text-align:center;
-    display:inline-block;
-    justify-content: center;
-    background-color: bisque;
-    margin: 0% 2% 0% 2%;
-    padding: 0% 5%;
-    width: auto;
-    height: auto;
-}
-
-li a{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    margin: 0% 2% 0% 2%;
-    padding: 0% 5%;
-}
-
-li a:hover{
-    background-color: black;
-    color: azure;
-} 
-
-/* ul{
     list-style-type: none;
     margin: 0%;
     padding: 0%;
     overflow: hidden;
-    background-color: aliceblue;
     text-align: center;
-    display: inline-block;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
 }
 
-li{
-    float: left;
+li {
+    background-color: black;
+    width: 25%;
+    margin: 0% 2% 2% 2%;
 }
 
 li a{
+    line-height:50px;
     display: block;
-    color: aquamarine;
+    color: bisque;
     text-align: center;
-    padding: 25px;
     text-decoration: none;
+    height: 50px;
+    width: 100%;
 }
 
 li a:hover{
-    background-color: black;
-} */
+    background-color: green;
+}
