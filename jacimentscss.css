@@ -6,9 +6,17 @@ html, body{
 }
 
 header{
-    background-color: rgb(202, 180, 81);
+    background-image:url("iconos/banner.jpg");
+    font-family: Verdana ;
+    font-weight: bold;
     height: 20%;
     text-align: center;
+}
+
+h1{
+    color: rgb(255, 166, 43);
+    -webkit-text-stroke: 2px black;
+
 }
 
 nav{
