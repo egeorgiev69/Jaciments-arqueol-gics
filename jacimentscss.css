@@ -4,7 +4,7 @@ html, body{
     display: flex;
     flex-direction: column;
 }
-
+/* header */
 header{
     background-image:url("iconos/banner.jpg");
     font-family: Verdana ;
@@ -12,20 +12,18 @@ header{
     height: 20%;
     text-align: center;
 }
-
 h1{
     color: rgb(255, 166, 43);
     -webkit-text-stroke: 2px black;
-
 }
 
+/* Barra de navegación */
 nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
-.list{
+#ulnav{
     list-style-type: none;
     margin: 0%;
     padding: 0%;
@@ -37,14 +35,12 @@ nav{
     flex-direction: row;
     width: 100%;
 }
-
-.menu {
+#linav {
     background-color: black;
     width: 25%;
     margin: 0% 2% 2% 2%;
 }
-
-.menu a{
+#linav a{
     line-height:50px;
     display: block;
     color: bisque;
@@ -53,11 +49,46 @@ nav{
     height: 50px;
     width: 100%;
 }
-
-.menu a:hover{
+#linav a:hover{
     background-color: green;
 }
 
+/* Submenu de Yacimientos */
+#linav ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    list-style-type: none;
+}
+#linav ul li{
+    background-color: black;
+}
+#linav:hover > ul {
+    display:block;
+}
+
+
+/* Contenido de la pagina */
+div{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0%;
+}
+
+/* aside */
+aside{
+    background-color: aqua;
+    width: 30%;
+}
+
+/* section */
+section{
+    background-color: blueviolet;
+    width: 70%;
+}
+
+/* footer */
 footer{background-color: rgb(128, 106, 83);
        font-weight: bolder;
        position: absolute;
@@ -65,19 +96,4 @@ footer{background-color: rgb(128, 106, 83);
        width: 100%;
        height: 12%;
        text-align:center
-}
-
-li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-    list-style-type: none;
-}
-
-li ul li{
-    background-color: black;
-}
-
-li:hover > ul {
-    display:block;
 }
