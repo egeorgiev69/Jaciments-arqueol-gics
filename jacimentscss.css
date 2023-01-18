@@ -10,7 +10,8 @@ html, body{
 
 /* header */
 header{
-    background-image:url("imagenes/banner.jpg");
+    background-color: rgb(98, 62, 21);
+    /* background-image:url('imagenes/banner.jpg'); */
     font-family: Verdana ;
     font-weight: bold;
     height: 20%;
@@ -54,7 +55,7 @@ nav{
     width: 100%;
 }
 .linav a:hover{
-    background-color: green;
+    background-color: rgb(86, 54, 3);
 }
 
 /* Submenu de Yacimientos */
@@ -87,7 +88,8 @@ footer{
 
 /* Contenido de la pagina inicio */
 section{
-    background-color: rgb(235, 205, 171);
+    /* background-color: rgb(235, 205, 171); */
+    background-image: url(https://media.adeo.com/marketplace/LMES/87060784/1830971.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds);
     width: 100%;
     height: auto;
     display: flex;
@@ -104,6 +106,7 @@ section{
     margin: 2% 2%;
     text-decoration: none;
     color: black;
+
 }
 
 .article:hover{
@@ -113,6 +116,7 @@ section{
 .imgArt{
     margin-top: 5%;
     width: 90%;
+    border: 5px rgb(143, 102, 56) solid;
 }
 
 /* Contenido de la pagina Mallorca */
