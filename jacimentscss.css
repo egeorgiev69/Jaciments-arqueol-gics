@@ -117,4 +117,12 @@ section{
     border: 5px rgb(143, 102, 56) solid;
 }
 
+
 /* Contenido de la pagina Mallorca */
+
+
+.titulo{font-weight: bold;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+img{border-color:black;
+    border: 4px;}
