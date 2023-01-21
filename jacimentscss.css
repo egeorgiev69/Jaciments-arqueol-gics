@@ -54,7 +54,7 @@ nav{
     width: 100%;
 }
 .linav a:hover{
-    background-color: rgb(86, 54, 3);
+    background-color: rgb(112, 109, 103);
 }
 
 /* Submenu de Yacimientos */
@@ -119,10 +119,40 @@ section{
 
 
 /* Contenido de la pagina Mallorca */
+.contenido{
+    background-color: rgb(234, 217, 184);
+    padding: 2%;
+}
 
+.titulo{
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-.titulo{font-weight: bold;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-img{border-color:black;
-    border: 4px;}
+.imgYacimiento{
+    border:black 4px solid;
+}
+
+p{
+    font-size: 25px;
+    padding: 0% 3%;
+    margin-top: 1%;
+}
+
+h3{
+    font-size: 30px;
+}
+
+iframe{
+    height: 50%;
+    width: 30%;
+    float: right;
+}
