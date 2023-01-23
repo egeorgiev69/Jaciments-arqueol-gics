@@ -135,8 +135,16 @@ section{
 }
 
 .selector a{
+    display: block;
     text-decoration: none;
     color: black;
+    width: 100%;
+    line-height:50px;
+    font-size: 200%;
+}
+
+.selector a:hover{
+    background-color: rgb(179, 175, 175);
 }
 
 .selector ul{
@@ -144,16 +152,23 @@ section{
     flex-direction: row;
     list-style-type: none;
     justify-content: center;
+    padding: 0%;
 }
 
 .selector ul li{
-    width: 30%;
+    width: 33.5%;
 }
 
 .selector ul li a{
+    display: block;
     text-decoration: none;
     color: black;
     width: 100%;
+    line-height:50px;
+}
+
+.selector ul li a:hover{
+    background-color: rgb(179, 175, 175);
 }
 
 .galeriaImg{
