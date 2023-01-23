@@ -118,7 +118,47 @@ section{
 }
 
 /* Contenido de las paginas de las islas */
+.contenidoIslas{
+    background-color: rgb(234, 217, 184);
+}
 
+.listaSelect{
+    padding: 0%;
+}
+
+.selector{
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+}
+
+.selector a{
+    text-decoration: none;
+    color: black;
+}
+
+.selector ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.selector ul li{
+    width: 30%;
+}
+
+.selector ul li a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.galeriaImg{
+    justify-content: center;
+}
 
 /* Contenido de la pagina informacion de los yacimientos */
 .contenido{
