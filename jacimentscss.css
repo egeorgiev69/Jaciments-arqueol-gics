@@ -8,6 +8,8 @@ html, body{
 @media screen and (min-width: 360px) and (max-width:800px) {
 }
 
+
+
 /* header */
 header{
     background-color: rgb(98, 62, 21);
@@ -21,7 +23,7 @@ h1{
     -webkit-text-stroke: 2px black;
 }
 
-/* Barra de navegación */
+/* Barra navegación */
 nav{
     display: flex;
     flex-direction: row;
@@ -57,7 +59,7 @@ nav{
     background-color: rgb(112, 109, 103);
 }
 
-/* Submenu de barra de navegacion */
+/* Submenu barra de navegacion */
 .linav ul {
     display:none;
     position:absolute;
@@ -71,6 +73,11 @@ nav{
 .linav:hover > ul {
     display:block;
 }
+/* Fin submenu barra navegacion */
+/* Fin barra navegacion */
+/* Fin header */
+
+
 
 /* footer */
 footer{
@@ -84,8 +91,11 @@ footer{
 .redSocial{
     margin: 1% 5%;
 }
+/* Fin footer */
 
-/* Contenido de la pagina inicio */
+
+
+/* Contenido pagina inicio */
 section{
     background-image: url(https://media.adeo.com/marketplace/LMES/87060784/1830971.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds);
     width: 100%;
@@ -104,7 +114,6 @@ section{
     margin: 2% 2%;
     text-decoration: none;
     color: black;
-
 }
 
 .article:hover{
@@ -116,18 +125,22 @@ section{
     width: 90%;
     border: 5px rgb(143, 102, 56) solid;
 }
+/* Fin contenido pagina inicio */
 
-/* Contenido de las paginas de las islas */
+
+
+/* Contenido pagina islas */
 .contenidoIslas{
     background-color: rgb(234, 217, 184);
 }
 
-.listaSelect{
+/* Submenu */
+.navSelect{
     padding: 0%;
     margin: 0%;
 }
 
-.selector{
+.select{
     width: 100%;
     background-color: grey;
     color: black;
@@ -135,7 +148,7 @@ section{
     list-style-type: none;
 }
 
-.selector a{
+.select a{
     display: block;
     text-decoration: none;
     color: black;
@@ -144,11 +157,11 @@ section{
     font-size: 200%;
 }
 
-.selector a:hover{
+.select a:hover{
     background-color: rgb(179, 175, 175);
 }
 
-.selector ul{
+.select ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -156,11 +169,11 @@ section{
     padding: 0%;
 }
 
-.selector ul li{
+.select ul li{
     width: 33.5%;
 }
 
-.selector ul li a{
+.select ul li a{
     display: block;
     text-decoration: none;
     color: black;
@@ -168,15 +181,77 @@ section{
     line-height:50px;
 }
 
-.selector ul li a:hover{
+.select ul li a:hover{
     background-color: rgb(179, 175, 175);
 }
+/* Fin submenu */
 
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    padding: 0%;
+    margin-bottom: 0%;
+}
+
+/* Galeria yacimientos */
 .galeriaImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
     justify-content: center;
 }
 
-/* Contenido de la pagina informacion de los yacimientos */
+.galeriaImg a{
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 2% 0% 0% 0%;
+}
+
+.galeriaImg a:hover{
+    background-color: rgb(253, 216, 143);
+}
+
+.galeriaImg a img{
+    width: 90%;
+    height: 80%;
+}
+
+/* Por epoca */
+
+/* Por tipo */
+
+/* Por municipio */
+.municipio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.municipio div{
+    width: 15%;
+    text-align: center;
+}
+
+.municipio div img{
+    width: 90%;
+    height: auto;
+}
+
+.municipio div a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Fin contenido pagina islas */
+
+
+
+/* Contenido pagina informacion de yacimientos */
 .contenido{
     background-color: rgb(234, 217, 184);
     padding: 2%;
@@ -214,3 +289,4 @@ iframe{
     width: 30%;
     float: right;
 }
+/* Fin contenido pagina informacion de yacimientos */
