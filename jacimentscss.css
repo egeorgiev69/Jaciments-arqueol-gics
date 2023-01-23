@@ -57,7 +57,7 @@ nav{
     background-color: rgb(112, 109, 103);
 }
 
-/* Submenu de Yacimientos */
+/* Submenu de barra de navegacion */
 .linav ul {
     display:none;
     position:absolute;
@@ -117,8 +117,10 @@ section{
     border: 5px rgb(143, 102, 56) solid;
 }
 
+/* Contenido de las paginas de las islas */
 
-/* Contenido de la pagina Mallorca */
+
+/* Contenido de la pagina informacion de los yacimientos */
 .contenido{
     background-color: rgb(234, 217, 184);
     padding: 2%;
