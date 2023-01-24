@@ -221,8 +221,50 @@ h2{
 }
 
 /* Por epoca */
+.epoca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.epoca div{
+    margin: 0% 3%;
+    width: 15%;
+    text-align: center;
+}
+
+.epoca div img{
+    width: 90%;
+    height: auto;
+}
+
+.epoca div a{
+    text-decoration: none;
+    color: black;
+}
 
 /* Por tipo */
+.tipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.tipo div{
+    width: 15%;
+    text-align: center;
+}
+
+.tipo div img{
+    width: 90%;
+    height: auto;
+}
+
+.tipo div a{
+    text-decoration: none;
+    color: black;
+}
 
 /* Por municipio */
 .municipio{
