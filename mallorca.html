@@ -26,198 +26,228 @@
         </nav>
     </header>
     <div class="contenidoIslas">
-        <div>
-            <ul class="navSelect">
-                <li class="select"><a href="#mallorca">Yacimientos de Mallorca</a>
-                    <ul>
-                        <li><a href="#epoca">Por epocas</a></li>
-                        <li><a href="#tipo">Por tipo</a></li>
-                        <li><a href="#municipio">Por municipio</a></li>
-                    </ul>
+        <ul class="navSelect">
+            <li class="select"><a href="#mallorca">Yacimientos de Mallorca</a>
+                <ul>
+                    <li><a href="#epoca">Por epocas</a></li>
+                    <li><a href="#tipo">Por tipo</a></li>
+                    <li><a href="#municipio">Por municipio</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h2><a name="mallorca">Yacimientos de Mallorca</a></h2>
+        <div class="galeriaImg">
+            <a href="Mallorca/yacimiento1-mallorca.html">
+                <img src="imagenes/ses-païses.jpg" alt="Ses paises" height="20%" width="30%">
+                <p>Ses païses</p>
+            </a>
+            <a href="Mallorca/yacimiento2-mallorca.html">
+                <img src="imagenes/pollentia.jpg" alt="Pollentia" height="20%" width="30%">
+                <p>Pollentia</p>  
+            </a>
+            <a href="Mallorca/yacimiento3-mallorca.html">
+                <img src="imagenes/son-fornes.jpg" alt="Son fornes" height="20%" width="30%">
+                <p>Son fornes</p>
+            </a>
+            <a href="Mallorca/yacimiento4-mallorca.html">
+                <img src="imagenes/sa-morisca.jpg" alt="Sa morisca" height="20%" width="22.45%">
+                <p>Sa morisca</p>
+            </a>
+            <a href="Mallorca/yacimiento5-mallorca.html">
+                <img src="imagenes/son-real.jpg" alt="Son real" height="20%" width="22.45%">
+                <p>Son real</p>
+            </a>
+            <a href="Mallorca/yacimiento6-mallorca.html">
+                <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany" height="20%" width="22.45%">
+                <p>Naveta alemany</p>
+            </a>
+            <a href="Mallorca/yacimiento7-mallorca.html">
+                <img src="imagenes/son-corro.jpg" alt="Son corro" height="20%" width="22.45%">
+                <p>Son corro</p>
+            </a>
+        </div>
+        <h2><a name="epoca">Por epoca</a></h2>
+        <div class="elemento">
+            <input type="radio" id="Talaiotica" name="categories" value="Talaiotica" checked>
+            <input type="radio" id="Romana" name="categories" value="Romana">
+            <input type="radio" id="Post-talaiotica" name="categories" value="Post-talaiotica">
+            <input type="radio" id="Prehistorica" name="categories" value="Prehistorica">
+
+            <ol class="filtrador">
+                <li><label for="Talaiotica">Talaiotica</label></li>
+                <li><label for="Romana">Romana</label>
+                <li><label for="Post-talaiotica">Post-talaiotica</label>
+                <li><label for="Prehistorica">Prehistorica</label></li>
+            </ol>
+
+            <ol class="posts">
+                <li data-category="Talaiotica">
+                    <a href="Mallorca/yacimiento1-mallorca.html" alt="Ses paises">
+                        <img src="imagenes/ses-païses.jpg" alt="Ses paises">
+                        <p>Ses païses</p>
+                    </a>
                 </li>
-            </ul>
-            <h2><a name="mallorca">Yacimientos de Mallorca</a></h2>
-            <div class="galeriaImg">
-                <a href="Mallorca/yacimiento1-mallorca.html">
-                        <img src="imagenes/ses-païses.jpg" alt="Ses paises" height="20%" width="30%">
-                        <p>Ses païses</p>
-                </a>
-                <a href="Mallorca/yacimiento2-mallorca.html">
-                        <img src="imagenes/pollentia.jpg" alt="Pollentia" height="20%" width="30%">
-                        <p>Pollentia</p>  
-                </a>
-                <a href="Mallorca/yacimiento3-mallorca.html">
-                        <img src="imagenes/son-fornes.jpg" alt="Son fornes" height="20%" width="30%">
-                        <p>Son fornes</p>
-                </a>
-                <a href="Mallorca/yacimiento4-mallorca.html">
-                        <img src="imagenes/sa-morisca.jpg" alt="Sa morisca" height="20%" width="22.45%">
-                        <p>Sa morisca</p>
-                </a>
-                <a href="Mallorca/yacimiento5-mallorca.html">
-                        <img src="imagenes/son-real.jpg" alt="Son real" height="20%" width="22.45%">
-                        <p>Son real</p>
-                </a>
-                <a href="Mallorca/yacimiento6-mallorca.html">
-                        <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany" height="20%" width="22.45%">
-                        <p>Naveta alemany</p>
-                </a>
-                <a href="Mallorca/yacimiento7-mallorca.html">
-                        <img src="imagenes/son-corro.jpg" alt="Son corro" height="20%" width="22.45%">
-                        <p>Son corro</p>
-                </a>
-            </div>
-            <h2><a name="epoca">Por epoca</a></h2>
-            <div class="epoca">
-                <div>
-                    <h3>Talaiotica</h3>
-                    <a href="Mallorca/yacimiento1-mallorca.html">
-                        <img src="imagenes/ses-païses.jpg" alt="Ses paises" height="20%" width="30%">
-                        <p>Ses païses</p>
-                    </a>
+                <li data-category="Talaiotica">
                     <a href="Mallorca/yacimiento4-mallorca.html">
-                        <img src="imagenes/sa-morisca.jpg" alt="Sa morisca" height="20%" width="22.45%">
+                        <img src="imagenes/sa-morisca.jpg" alt="Sa morisca">
                         <p>Sa morisca</p>
                     </a>
-                    <a href="Mallorca/yacimiento5-mallorca.html">
-                        <img src="imagenes/son-real.jpg" alt="Son real" height="20%" width="22.45%">
-                        <p>Son real</p>
-                    </a>
-                </div>
-                <div>
-                    <h3>Romana</h3>
-                    <a href="Mallorca/yacimiento2-mallorca.html">
-                        <img src="imagenes/pollentia.jpg" alt="Pollentia" height="20%" width="30%">
-                        <p>Pollentia</p>  
-                    </a>
-                </div>
-                <div>
-                    <h3>Post-talaiotica</h3>
-                    <a href="Mallorca/yacimiento7-mallorca.html">
-                        <img src="imagenes/son-corro.jpg" alt="Son corro" height="20%" width="22.45%">
-                        <p>Son corro</p>
-                    </a>
-                </div>
-                <div>
-                    <h3>Prehistorica</h3>
-                    <a href="Mallorca/yacimiento3-mallorca.html">
-                        <img src="imagenes/son-fornes.jpg" alt="Son fornes" height="20%" width="30%">
-                        <p>Son fornes</p>
-                    </a>
+                </li>
+                <li data-category="Prehistorica">
                     <a href="Mallorca/yacimiento6-mallorca.html">
-                        <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany" height="20%" width="22.45%">
+                        <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany">
                         <p>Naveta alemany</p>
                     </a>
-                </div>
-            </div>
-            <h2><a name="tipo">Por tipo</a></h2>
-            <div class="tipo">
-                <div>
-                    <h3>Poblado</h3>
-                    <a href="Mallorca/yacimiento1-mallorca.html">
-                        <img src="imagenes/ses-païses.jpg" alt="Ses paises" height="20%" width="30%">
+                </li>
+                <li data-category="Romana">
+                    <a href="Mallorca/yacimiento2-mallorca.html">
+                        <img src="imagenes/pollentia.jpg" alt="Pollentia">
+                        <p>Pollentia</p>  
+                    </a>
+                </li>
+                <li data-category="Talaiotica">
+                    <a href="Mallorca/yacimiento5-mallorca.html">
+                        <img src="imagenes/son-real.jpg" alt="Son real">
+                        <p>Son real</p>  
+                    </a>
+                </li>
+                <li data-category="Prehistorica">
+                    <a href="Mallorca/yacimiento3-mallorca.html">
+                        <img src="imagenes/son-fornes.jpg" alt="Son fornes">
+                        <p>Son fornes</p>  
+                    </a>
+                </li>
+                <li data-category="Post-talaiotica">
+                    <a href="Mallorca/yacimiento7-mallorca.html">
+                        <img src="imagenes/son-corro.jpg" alt="Son corro">
+                        <p>Son corro</p>  
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <h2><a name="tipo">Por tipo</a></h2>
+        <div class="elemento">
+            <input type="radio" id="Poblado" name="categories" value="Poblado">
+            <input type="radio" id="Ciudad" name="categories" value="Ciudad">
+            <input type="radio" id="Necropolis" name="categories" value="Necropolis">
+            <input type="radio" id="Monumento" name="categories" value="Monumento">
+            <input type="radio" id="Santuario" name="categories" value="Santuario">
+
+            <ol class="filtrador">
+                <li><label for="Poblado">Poblado</label></li>
+                <li><label for="Ciudad">Ciudad</label>
+                <li><label for="Necropolis">Necropolis</label>
+                <li><label for="Monumento">Monumento</label></li>
+                <li><label for="Santuario">Santuario</label></li>
+            </ol>
+
+            <ol class="posts">
+                <li data-category="Poblado">
+                    <a href="Mallorca/yacimiento1-mallorca.html" alt="Ses paises">
+                        <img src="imagenes/ses-païses.jpg" alt="Ses paises">
                         <p>Ses païses</p>
                     </a>
+                </li>
+                <li data-category="Poblado">
                     <a href="Mallorca/yacimiento4-mallorca.html">
-                        <img src="imagenes/sa-morisca.jpg" alt="Sa morisca" height="20%" width="22.45%">
+                        <img src="imagenes/sa-morisca.jpg" alt="Sa morisca">
                         <p>Sa morisca</p>
                     </a>
-                </div>
-                <div>
-                    <h3>Ciudad</h3>
-                    <a href="Mallorca/yacimiento2-mallorca.html">
-                        <img src="imagenes/pollentia.jpg" alt="Pollentia" height="20%" width="30%">
-                        <p>Pollentia</p>  
-                    </a>
-                </div>
-                <div>
-                    <h3>Necropolis</h3>
-                    <a href="Mallorca/yacimiento5-mallorca.html">
-                        <img src="imagenes/son-real.jpg" alt="Son real" height="20%" width="22.45%">
-                        <p>Son real</p>
-                    </a>
-                </div>
-                <div>
-                    <h3>Monumento</h3>
+                </li>
+                <li data-category="Monumento">
                     <a href="Mallorca/yacimiento6-mallorca.html">
-                        <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany" height="20%" width="22.45%">
+                        <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany">
                         <p>Naveta alemany</p>
                     </a>
+                </li>
+                <li data-category="Ciudad">
+                    <a href="Mallorca/yacimiento2-mallorca.html">
+                        <img src="imagenes/pollentia.jpg" alt="Pollentia">
+                        <p>Pollentia</p>  
+                    </a>
+                </li>
+                <li data-category="Necropolis">
+                    <a href="Mallorca/yacimiento5-mallorca.html">
+                        <img src="imagenes/son-real.jpg" alt="Son real">
+                        <p>Son real</p>  
+                    </a>
+                </li>
+                <li data-category="Monumento">
                     <a href="Mallorca/yacimiento3-mallorca.html">
-                        <img src="imagenes/son-fornes.jpg" alt="Son fornes" height="20%" width="30%">
-                        <p>Son fornes</p>
+                        <img src="imagenes/son-fornes.jpg" alt="Son fornes">
+                        <p>Son fornes</p>  
                     </a>
-                </div>
-                <div>
-                    <h3>Santuario</h3>
+                </li>
+                <li data-category="Santuario">
                     <a href="Mallorca/yacimiento7-mallorca.html">
-                        <img src="imagenes/son-corro.jpg" alt="Son corro" height="20%" width="22.45%">
-                        <p>Son corro</p>
+                        <img src="imagenes/son-corro.jpg" alt="Son corro">
+                        <p>Son corro</p>  
                     </a>
-                </div>
-            </div>
-            <h2><a name="municipio">Por municipio</a></h2>
-            <div class="municipio">
-                <input type="radio" id="Arta" name="categories" value="Arta" checked>
-                <input type="radio" id="Calvia" name="categories" value="Calvia">
-                <input type="radio" id="Alcudia" name="categories" value="Alcudia">
-                <input type="radio" id="Montuiri" name="categories" value="Montuiri">
-                <input type="radio" id="Santa" name="categories" value="Santa">
-                <input type="radio" id="Costitx" name="categories" value="Costitx">
-            
-                <ol class="lugares">
-                    <li><label for="Arta">Arta</label></li>
-                    <li><label for="Calvia">Calvia</label>
-                    <li><label for="Alcudia">Alcudia</label>
-                    <li><label for="Montuiri">Montuiri</label></li>
-                    <li><label for="Santa">Santa Margarita</label></li>
-                    <li><label for="Costitx">Costitx</label></li>
-                </ol>
-                <ol class="posts">
-                    <li data-category="Arta">
-                        <a href="Mallorca/yacimiento1-mallorca.html" alt="Ses paises">
-                            <img src="imagenes/ses-païses.jpg" alt="Ses paises">
-                            <p>Ses païses</p>
-                        </a>
-                    </li>
-                    <li data-category="Calvia">
-                        <a href="Mallorca/yacimiento4-mallorca.html">
-                            <img src="imagenes/sa-morisca.jpg" alt="Sa morisca">
-                            <p>Sa morisca</p>
-                        </a>
-                    </li>
-                    <li data-category="Calvia">
-                        <a href="Mallorca/yacimiento6-mallorca.html">
-                            <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany">
-                            <p>Naveta alemany</p>
-                        </a>
-                    </li>
-                    <li data-category="Alcudia">
-                        <a href="Mallorca/yacimiento2-mallorca.html">
-                            <img src="imagenes/pollentia.jpg" alt="Pollentia">
-                            <p>Pollentia</p>  
-                        </a>
-                    </li>
-                    <li data-category="Santa">
-                        <a href="Mallorca/yacimiento5-mallorca.html">
-                            <img src="imagenes/son-real.jpg" alt="Son real">
-                            <p>Son real</p>  
-                        </a>
-                    </li>
-                    <li data-category="Montuiri">
-                        <a href="Mallorca/yacimiento3-mallorca.html">
-                            <img src="imagenes/son-fornes.jpg" alt="Son fornes">
-                            <p>Son fornes</p>  
-                        </a>
-                    </li>
-                    <li data-category="Costitx">
-                        <a href="Mallorca/yacimiento7-mallorca.html">
-                            <img src="imagenes/son-corro.jpg" alt="Son corro">
-                            <p>Son corro</p>  
-                        </a>
-                    </li>
-                </ol>
-            </div>
+                </li>
+            </ol>
+        </div>
+        <h2><a name="municipio">Por municipio</a></h2>
+        <div class="elemento">
+            <input type="radio" id="Arta" name="categories" value="Arta">
+            <input type="radio" id="Calvia" name="categories" value="Calvia">
+            <input type="radio" id="Alcudia" name="categories" value="Alcudia">
+            <input type="radio" id="Montuiri" name="categories" value="Montuiri">
+            <input type="radio" id="Santa" name="categories" value="Santa">
+            <input type="radio" id="Costitx" name="categories" value="Costitx">
+
+            <ol class="filtrador">
+                <li><label for="Arta">Arta</label></li>
+                <li><label for="Calvia">Calvia</label>
+                <li><label for="Alcudia">Alcudia</label>
+                <li><label for="Montuiri">Montuiri</label></li>
+                <li><label for="Santa">Santa Margarita</label></li>
+                <li><label for="Costitx">Costitx</label></li>
+            </ol>
+
+            <ol class="posts">
+                <li data-category="Arta">
+                    <a href="Mallorca/yacimiento1-mallorca.html" alt="Ses paises">
+                        <img src="imagenes/ses-païses.jpg" alt="Ses paises">
+                        <p>Ses païses</p>
+                    </a>
+                </li>
+                <li data-category="Calvia">
+                    <a href="Mallorca/yacimiento4-mallorca.html">
+                        <img src="imagenes/sa-morisca.jpg" alt="Sa morisca">
+                        <p>Sa morisca</p>
+                    </a>
+                </li>
+                <li data-category="Calvia">
+                    <a href="Mallorca/yacimiento6-mallorca.html">
+                        <img src="imagenes/naveta-alemany.jpg" alt="Naveta alemany">
+                        <p>Naveta alemany</p>
+                    </a>
+                </li>
+                <li data-category="Alcudia">
+                    <a href="Mallorca/yacimiento2-mallorca.html">
+                        <img src="imagenes/pollentia.jpg" alt="Pollentia">
+                        <p>Pollentia</p>  
+                    </a>
+                </li>
+                <li data-category="Santa">
+                    <a href="Mallorca/yacimiento5-mallorca.html">
+                        <img src="imagenes/son-real.jpg" alt="Son real">
+                        <p>Son real</p>  
+                    </a>
+                </li>
+                <li data-category="Montuiri">
+                    <a href="Mallorca/yacimiento3-mallorca.html">
+                        <img src="imagenes/son-fornes.jpg" alt="Son fornes">
+                        <p>Son fornes</p>  
+                    </a>
+                </li>
+                <li data-category="Costitx">
+                    <a href="Mallorca/yacimiento7-mallorca.html">
+                        <img src="imagenes/son-corro.jpg" alt="Son corro">
+                        <p>Son corro</p>  
+                    </a>
+                </li>
+            </ol>
         </div>
     </div>
     <footer> 

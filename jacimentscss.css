@@ -11,290 +11,249 @@ html, body{
 
 
 /* header */
-header{
-    background-color: rgb(98, 62, 21);
-    font-family: Verdana ;
-    font-weight: bold;
-    height: 20%;
-    text-align: center;
-}
-h1{
-    color: rgb(255, 166, 43);
-    -webkit-text-stroke: 2px black;
-}
+    header{
+        background-color: rgb(98, 62, 21);
+        font-family: Verdana ;
+        font-weight: bold;
+        height: 20%;
+        text-align: center;
+    }
+    h1{
+        color: rgb(255, 166, 43);
+        -webkit-text-stroke: 2px black;
+    }
 
-/* Barra navegación */
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.ulnav{
-    list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-}
-.linav {
-    background-color: black;
-    width: 25%;
-    margin: 0% 2% 2% 2%;
-}
-.linav a{
-    line-height:50px;
-    display: block;
-    color: bisque;
-    text-align: center;
-    text-decoration: none;
-    height: 50px;
-    width: 100%;
-}
-.linav a:hover{
-    background-color: rgb(112, 109, 103);
-}
+    /* Barra navegación */
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .ulnav{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+        }
+        .linav {
+            background-color: black;
+            width: 25%;
+            margin: 0% 2% 2% 2%;
+        }
+        .linav a{
+            line-height:50px;
+            display: block;
+            color: bisque;
+            text-align: center;
+            text-decoration: none;
+            height: 50px;
+            width: 100%;
+        }
+        .linav a:hover{
+            background-color: rgb(112, 109, 103);
+        }
 
-/* Submenu barra de navegacion */
-.linav ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-    list-style-type: none;
-    z-index: 1;
-}
-.linav ul li{
-    background-color: black;
-}
-.linav:hover > ul {
-    display:block;
-}
-/* Fin submenu barra navegacion */
-/* Fin barra navegacion */
+        /* Submenu barra de navegacion */
+            .linav ul {
+                display:none;
+                position:absolute;
+                min-width:140px;
+                list-style-type: none;
+                z-index: 1;
+            }
+            .linav ul li{
+                background-color: black;
+            }
+            .linav:hover > ul {
+                display:block;
+            }
+
+        /* Fin submenu barra navegacion */
+
+    /* Fin barra navegacion */
+
 /* Fin header */
 
 
 
 /* footer */
-footer{
-    background-color: rgb(128, 106, 83);
-    font-weight: bolder;
-    position: relative;
-    width: 100%;
-    text-align:center;
-}
+    footer{
+        background-color: rgb(128, 106, 83);
+        font-weight: bolder;
+        position: relative;
+        width: 100%;
+        text-align:center;
+    }
 
-.redSocial{
-    margin: 1% 5%;
-}
+    .redSocial{
+        margin: 1% 5%;
+    }
 /* Fin footer */
 
 
 
 /* Contenido pagina inicio */
-section{
-    background-image: url(imagenes/fondo.webp);
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-} 
+    section{
+        background-image: url(imagenes/fondo.webp);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+    } 
 
-.article{
-    width: 40%;
-    height: 50%;
-    text-align: center;
-    margin: 2% 2%;
-    text-decoration: none;
-    color: black;
-}
+    .article{
+        width: 40%;
+        height: 50%;
+        text-align: center;
+        margin: 2% 2%;
+        text-decoration: none;
+        color: black;
+    }
 
-.article:hover{
-    background-color: rgb(237, 196, 149);
-}
+    .article:hover{
+        background-color: rgb(237, 196, 149);
+    }
 
-.imgArt{
-    margin-top: 5%;
-    width: 90%;
-    border: 5px rgb(143, 102, 56) solid;
-}
+    .imgArt{
+        margin-top: 5%;
+        width: 90%;
+        border: 5px rgb(143, 102, 56) solid;
+    }
 /* Fin contenido pagina inicio */
 
 
 
 /* Contenido pagina islas */
-.contenidoIslas{
-    background-color: rgb(234, 217, 184);
-}
+    .contenidoIslas{
+        background-color: rgb(234, 217, 184);
+    }
 
-/* Submenu */
-.navSelect{
-    padding: 0%;
-    margin: 0%;
-}
+    /* Submenu */
+        .navSelect{
+            padding: 0%;
+            margin: 0%;
+        }
 
-.select{
-    width: 100%;
-    background-color: grey;
-    color: black;
-    text-align: center;
-    list-style-type: none;
-}
-
-.select a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    line-height:50px;
-    font-size: 200%;
-}
-
-.select a:hover{
-    background-color: rgb(179, 175, 175);
-}
-
-.select ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: center;
-    padding: 0%;
-}
-
-.select ul li{
-    width: 33.5%;
-}
-
-.select ul li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    line-height:50px;
-}
-
-.select ul li a:hover{
-    background-color: rgb(179, 175, 175);
-}
-/* Fin submenu */
-
-h2{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 50px;
-    padding: 0%;
-    margin-bottom: 0%;
-}
-
-/* Galeria yacimientos */
-.galeriaImg{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-}
-
-.galeriaImg a{
-    width: 30%;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    padding: 2% 0% 0% 0%;
-}
-
-.galeriaImg a:hover{
-    background-color: rgb(253, 216, 143);
-}
-
-.galeriaImg a img{
-    width: 90%;
-    height: 80%;
-}
-
-/* Por epoca */
-.epoca{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-.epoca div{
-    margin: 0% 3%;
-    width: 15%;
-    text-align: center;
-}
-
-.epoca div img{
-    width: 90%;
-    height: auto;
-}
-
-.epoca div a{
-    text-decoration: none;
-    color: black;
-}
-
-/* Por tipo */
-.tipo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-.tipo div{
-    width: 15%;
-    text-align: center;
-}
-
-.tipo div img{
-    width: 90%;
-    height: auto;
-}
-
-.tipo div a{
-    text-decoration: none;
-    color: black;
-}
-
-    /* Por municipio */
-        .municipio{
-            justify-content: center;
+        .select{
             width: 100%;
+            background-color: grey;
+            color: black;
+            text-align: center;
+            list-style-type: none;
         }
 
-        ol{
-            list-style: none;
+        .select a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            line-height:50px;
+            font-size: 200%;
         }
-        
-        input[type="radio"] {
+
+        .select a:hover{
+            background-color: rgb(179, 175, 175);
+        }
+
+        .select ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0%;
+        }
+
+        .select ul li{
+            width: 33.5%;
+        }
+
+        .select ul li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            line-height:50px;
+        }
+
+        .select ul li a:hover{
+            background-color: rgb(179, 175, 175);
+        }
+    /* Fin submenu */
+
+    h2{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 50px;
+        padding: 0%;
+        margin-bottom: 0%;
+    }
+
+    /* Galeria yacimientos */
+        .galeriaImg{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: center;
+        }
+
+        .galeriaImg a{
+            width: 30%;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            padding: 2% 0% 0% 0%;
+        }
+
+        .galeriaImg a:hover{
+            background-color: rgb(253, 216, 143);
+        }
+
+        .galeriaImg a img{
+            width: 90%;
+            height: 80%;
+            border:black 4px solid;
+        }
+    /* Fin galeria yacimientos */
+
+        .elemento{
+            justify-content: center;
+             width: 100%;
+        }
+
+        .elemento ol{
+            list-style: none;
+            padding: 0%;
+        }
+            
+        .elemento input[type="radio"] {
             display: none;
             position: absolute;
         }
-  
-        /* filters */
-            .lugares{
+    
+        /* filtrador */
+            .filtrador{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
             }
-        
-            .lugares li{
+            
+            .filtrador li{
                 text-align: center;
                 width: 15%;
                 margin: 1%;
             }
-        
-            .lugares label{
+            
+            .filtrador label{
                 background-color: #7a5114;
                 color: #fff;
                 display: block;
@@ -303,38 +262,37 @@ h2{
                 cursor: pointer;
                 border-radius: 2rem;
             }
-            
-            .lugares label:hover {
+                
+            .filtrador label:hover {
                 background-color: #b07a28;
                 color: #fff;
             }
-        /* Fin filters */
-    
-        /* posts de municipi */
+        /* Fin filtrador */
+        
+        /* posts de las imagenes */
             .posts{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
             }
-        
+            
             .posts li {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 align-items: center;
                 width: 40%;
-                margin: 0% 2%;
             }
 
             .posts li a{
                 text-decoration: none;
             }
-            
+                
             .posts li img{
                 width: 90%;
                 border:black 4px solid;
             }
-            
+                
             .posts li p{
                 padding: 1%;
                 color: black;
@@ -342,29 +300,51 @@ h2{
             }
         /* Fin posts */
 
-        /* FILTERING RULES */
-            [value="Arta"]:checked ~ .lugares [for="Arta"],
-            [value="Calvia"]:checked ~ .lugares [for="Calvia"],
-            [value="Alcudia"]:checked ~ .lugares [for="Alcudia"],
-            [value="Montuiri"]:checked ~ .lugares [for="Montuiri"],
-            [value="Santa"]:checked ~ .lugares [for="Santa"],
-            [value="Costitx"]:checked ~ .lugares [for="Costitx"] {
-                background-color: #b07a28;
-                color: #fff;
-            }
+        /* Reglas de filtrado */
+            /* Encima de label */
+                /* Municipio */
+                [value="Arta"]:checked ~ .filtrador [for="Arta"],
+                [value="Calvia"]:checked ~ .filtrador [for="Calvia"],
+                [value="Alcudia"]:checked ~ .filtrador [for="Alcudia"],
+                [value="Montuiri"]:checked ~ .filtrador [for="Montuiri"],
+                [value="Santa"]:checked ~ .filtrador [for="Santa"],
+                [value="Costitx"]:checked ~ .filtrador [for="Costitx"],
+                /* Tipo */
+                [value="Poblado"]:checked ~ .filtrador [for="Poblado"],
+                [value="Ciudad"]:checked ~ .filtrador [for="Ciudad"],
+                [value="Necropolis"]:checked ~ .filtrador [for="Necropolis"],
+                [value="Monumento"]:checked ~ .filtrador [for="Monumento"],
+                [value="Santuario"]:checked ~ .filtrador [for="Santuario"],
+                /* Epoca */
+                [value="Talaiotica"]:checked ~ .filtrador [for="Talaiotica"],
+                [value="Romana"]:checked ~ .filtrador [for="Romana"],
+                [value="Post-talaiotica"]:checked ~ .filtrador [for="Post-talaiotica"],
+                [value="Prehistorica"]:checked ~ .filtrador [for="Prehistorica"] {
+                    background-color: #d79e47;
+                    color: #fff;
+                }
 
-            [value="All"]:checked ~ .posts [data-category] {
-                display: block;
-            }
-            
-            [value="Arta"]:checked ~ .posts li:not([data-category~="Arta"]),
-            [value="Calvia"]:checked ~ .posts li:not([data-category~="Calvia"]),
-            [value="Alcudia"]:checked ~ .posts li:not([data-category~="Alcudia"]),
-            [value="Montuiri"]:checked ~ .posts li:not([data-category~="Montuiri"]),
-            [value="Santa"]:checked ~ .posts li:not([data-category~="Santa"]),
-            [value="Costitx"]:checked ~ .posts li:not([data-category~="Costitx"]) {
-                display: none;
-            }
+            /* Segun el lugar saldra un post u otro */
+                /* Municipio */
+                [value="Arta"]:checked ~ .posts li:not([data-category~="Arta"]),
+                [value="Calvia"]:checked ~ .posts li:not([data-category~="Calvia"]),
+                [value="Alcudia"]:checked ~ .posts li:not([data-category~="Alcudia"]),
+                [value="Montuiri"]:checked ~ .posts li:not([data-category~="Montuiri"]),
+                [value="Santa"]:checked ~ .posts li:not([data-category~="Santa"]),
+                [value="Costitx"]:checked ~ .posts li:not([data-category~="Costitx"]),
+                /* Tipo */
+                [value="Poblado"]:checked ~ .posts li:not([data-category~="Poblado"]),
+                [value="Ciudad"]:checked ~ .posts li:not([data-category~="Ciudad"]),
+                [value="Necropolis"]:checked ~ .posts li:not([data-category~="Necropolis"]),
+                [value="Monumento"]:checked ~ .posts li:not([data-category~="Monumento"]),
+                [value="Santuario"]:checked ~ .posts li:not([data-category~="Santuario"]),
+                /* Epoca */
+                [value="Talaiotica"]:checked ~ .posts li:not([data-category~="Talaiotica"]),
+                [value="Romana"]:checked ~ .posts li:not([data-category~="Romana"]),
+                [value="Post-talaiotica"]:checked ~ .posts li:not([data-category~="Post-talaiotica"]),
+                [value="Prehistorica"]:checked ~ .posts li:not([data-category~="Prehistorica"]) {
+                    display: none;
+                }
         /* Fin rules */
 
     /* Fin por municipios */
@@ -374,41 +354,37 @@ h2{
 
 
 /* Contenido pagina informacion de yacimientos */
-.contenido{
-    background-color: rgb(234, 217, 184);
-    padding: 2%;
-}
+    .contenido{
+        background-color: rgb(234, 217, 184);
+        padding: 2%;
+    }
 
-.titulo{
-    font-size: 40px;
-    text-decoration: underline;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    .titulo{
+        font-size: 40px;
+        text-decoration: underline;
+        font-weight: bold;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-.info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-.imgYacimiento{
-    border:black 4px solid;
-}
+    .imgYacimiento{
+        border:black 4px solid;
+    }
 
-p{
-    font-size: 25px;
-    padding: 0% 3%;
-    margin-top: 1%;
-}
+    .info p{
+        font-size: 25px;
+        padding: 0% 3%;
+        margin-top: 1%;
+    }
 
-h3{
-    font-size: 30px;
-}
-
-iframe{
-    height: 50%;
-    width: 30%;
-    float: right;
-}
+    .contenido iframe{
+        height: 50%;
+        width: 30%;
+        float: right;
+    }
 /* Fin contenido pagina informacion de yacimientos */
