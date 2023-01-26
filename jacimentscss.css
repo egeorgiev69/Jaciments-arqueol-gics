@@ -5,13 +5,6 @@ html, body{
     flex-direction: column;
 }
 
-@media screen and (min-width: 360px) and (max-width:800px) {
-} 
-
-
-
-
-
 /* header */
         header{
             background-color: rgb(98, 62, 21);
