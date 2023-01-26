@@ -10,19 +10,56 @@ html, body{
 
 
 
-/* header */
-    header{
-        background-color: rgb(98, 62, 21);
-        font-family: Verdana ;
-        font-weight: bold;
-        height: 20%;
-        text-align: center;
-    }
-    h1{
-        color: rgb(255, 166, 43);
-        -webkit-text-stroke: 2px black;
-    }
 
+
+/* header */
+        header{
+            background-color: rgb(98, 62, 21);
+            font-family: Verdana ;
+            font-weight: bold;
+            height: 20%;
+            text-align: center;
+        }
+        h1{
+            color: rgb(255, 166, 43);
+            -webkit-text-stroke: 2px black;
+        }
+
+    /* Barra navegación */
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .ulnav{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+        }
+        .linav {
+            background-color: black;
+            width: 25%;
+            margin: 0% 2% 2% 2%;
+        }
+        .linav a{
+            line-height:50px;
+            display: block;
+            color: bisque;
+            text-align: center;
+            text-decoration: none;
+            height: 50px;
+            width: 100%;
+        }
+        .linav a:hover{
+            background-color: rgb(112, 109, 103);
+        }
     /* Barra navegación */
         nav{
             display: flex;
@@ -73,6 +110,28 @@ html, body{
             .linav:hover > ul {
                 display:block;
             }
+        /* Submenu barra de navegacion */
+            .linav ul {
+                display:none;
+                position:absolute;
+                min-width:140px;
+                list-style-type: none;
+                z-index: 1;
+            }
+            .linav ul li{
+                background-color: black;
+            }
+            .linav:hover > ul {
+                display:block;
+            }
+
+        /* Fin submenu barra navegacion */
+
+    /* Fin barra navegacion */
+
+/* Fin header */
+
+
 
         /* Fin submenu barra navegacion */
 
@@ -91,13 +150,38 @@ html, body{
         text-align:center;
     }
 
-    .redSocial{
-        margin: 1% 5%;
-    }
+        .redSocial{
+            margin: 1% 5%;
+        }
+/* Fin footer */
+
+
 /* Fin footer */
 
 
 
+/* Contenido pagina inicio */
+    section{
+        background-image: url(imagenes/fondo.webp);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+    } 
+/* Contenido pagina inicio */
+    section{
+        background-image: url(imagenes/fondo.webp);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+    } 
 /* Contenido pagina inicio */
     section{
         background-image: url(imagenes/fondo.webp);
@@ -118,20 +202,38 @@ html, body{
         text-decoration: none;
         color: black;
     }
+    .article{
+        width: 40%;
+        height: 50%;
+        text-align: center;
+        margin: 2% 2%;
+        text-decoration: none;
+        color: black;
+    }
 
     .article:hover{
         background-color: rgb(237, 196, 149);
     }
-
-    .imgArt{
-        margin-top: 5%;
-        width: 90%;
-        border: 5px rgb(143, 102, 56) solid;
+    .article:hover{
+        background-color: rgb(237, 196, 149);
     }
+
+        .imgArt{
+            margin-top: 5%;
+            width: 90%;
+            border: 5px rgb(143, 102, 56) solid;
+        }
+/* Fin contenido pagina inicio */
+
+
 /* Fin contenido pagina inicio */
 
 
 
+/* Contenido pagina islas */
+    .contenidoIslas{
+        background-color: rgb(234, 217, 184);
+    }
 /* Contenido pagina islas */
     .contenidoIslas{
         background-color: rgb(234, 217, 184);
@@ -142,7 +244,19 @@ html, body{
             padding: 0%;
             margin: 0%;
         }
+    /* Submenu */
+        .navSelect{
+            padding: 0%;
+            margin: 0%;
+        }
 
+        .select{
+            width: 100%;
+            background-color: grey;
+            color: black;
+            text-align: center;
+            list-style-type: none;
+        }
         .select{
             width: 100%;
             background-color: grey;
@@ -159,7 +273,18 @@ html, body{
             line-height:50px;
             font-size: 200%;
         }
+        .select a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            line-height:50px;
+            font-size: 200%;
+        }
 
+        .select a:hover{
+            background-color: rgb(179, 175, 175);
+        }
         .select a:hover{
             background-color: rgb(179, 175, 175);
         }
@@ -171,7 +296,17 @@ html, body{
             justify-content: center;
             padding: 0%;
         }
+        .select ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0%;
+        }
 
+        .select ul li{
+            width: 33.5%;
+        }
         .select ul li{
             width: 33.5%;
         }
@@ -183,7 +318,26 @@ html, body{
             width: 100%;
             line-height:50px;
         }
+        .select ul li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            line-height:50px;
+        }
 
+        .select ul li a:hover{
+            background-color: rgb(179, 175, 175);
+        }
+    /* Fin submenu */
+
+    h2{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 50px;
+        padding: 0%;
+        margin-bottom: 0%;
+    }
         .select ul li a:hover{
             background-color: rgb(179, 175, 175);
         }
@@ -359,22 +513,22 @@ html, body{
         padding: 2%;
     }
 
-    .titulo{
-        font-size: 40px;
-        text-decoration: underline;
-        font-weight: bold;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+        .titulo{
+            font-size: 40px;
+            text-decoration: underline;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
 
-    .info{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+        .info{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
 
-    .imgYacimiento{
-        border:black 4px solid;
-    }
+        .imgYacimiento{
+            border:black 4px solid;
+        }
 
     .info p{
         font-size: 25px;
