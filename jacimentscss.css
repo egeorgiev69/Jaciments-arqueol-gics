@@ -213,29 +213,13 @@ html, body{
     .contenidoIslas{
         background-color: rgb(234, 217, 184);
     }
-/* Contenido pagina islas */
-    .contenidoIslas{
-        background-color: rgb(234, 217, 184);
-    }
 
     /* Submenu */
         .navSelect{
             padding: 0%;
             margin: 0%;
         }
-    /* Submenu */
-        .navSelect{
-            padding: 0%;
-            margin: 0%;
-        }
 
-        .select{
-            width: 100%;
-            background-color: grey;
-            color: black;
-            text-align: center;
-            list-style-type: none;
-        }
         .select{
             width: 100%;
             background-color: grey;
@@ -252,18 +236,7 @@ html, body{
             line-height:50px;
             font-size: 200%;
         }
-        .select a{
-            display: block;
-            text-decoration: none;
-            color: black;
-            width: 100%;
-            line-height:50px;
-            font-size: 200%;
-        }
 
-        .select a:hover{
-            background-color: rgb(179, 175, 175);
-        }
         .select a:hover{
             background-color: rgb(179, 175, 175);
         }
@@ -275,17 +248,7 @@ html, body{
             justify-content: center;
             padding: 0%;
         }
-        .select ul{
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            justify-content: center;
-            padding: 0%;
-        }
 
-        .select ul li{
-            width: 33.5%;
-        }
         .select ul li{
             width: 33.5%;
         }
@@ -297,26 +260,7 @@ html, body{
             width: 100%;
             line-height:50px;
         }
-        .select ul li a{
-            display: block;
-            text-decoration: none;
-            color: black;
-            width: 100%;
-            line-height:50px;
-        }
 
-        .select ul li a:hover{
-            background-color: rgb(179, 175, 175);
-        }
-    /* Fin submenu */
-
-    h2{
-        text-align: center;
-        text-decoration: underline;
-        font-size: 50px;
-        padding: 0%;
-        margin-bottom: 0%;
-    }
         .select ul li a:hover{
             background-color: rgb(179, 175, 175);
         }
@@ -351,26 +295,29 @@ html, body{
             .galeriaImg a:hover{
                 background-color: rgb(253, 216, 143);
             }
+
+            .galeriaImg a img{
+                width: 90%;
+                height: 80%;
+                border:black 4px solid;
+            }
+
         /* Fin Mallorca */
 
         /* Ibiza */
-        .galeriaImg .aIbiza{
-            width: 40%;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            padding: 2% 0% 0% 0%;
-        }
+            .galeriaImg .aIbiza{
+                width: 40%;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                padding: 2% 0% 0% 0%;
+            }
 
-        .galeriaImg .aIbiza:hover{
-            background-color: rgb(253, 216, 143);
-        }
+            .galeriaImg .aIbiza:hover{
+                background-color: rgb(253, 216, 143);
+            }
         /* Fin Ibiza */
-        .galeriaImg a img{
-            width: 90%;
-            height: 80%;
-            border:black 4px solid;
-        }
+        
     /* Fin galeria yacimientos */
 
         .elemento{
@@ -617,4 +564,17 @@ html, body{
             width: 100%;
         }
     /* Fin contenido pagina informacion de yacimientos */
+    
+    /* Contenido pagina islas */
+        /* Submenu */
+            .select ul{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .select ul li{
+                width: 100%;
+            }
+        /* Fin submenu */
+    /* Fin contenido pagina islas */
 }
