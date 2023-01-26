@@ -5,11 +5,6 @@ html, body{
     flex-direction: column;
 }
 
-@media screen and (min-width: 360px) and (max-width:800px) {
-}
-
-
-
 /* header */
     header{
         background-color: rgb(98, 62, 21);
@@ -206,18 +201,33 @@ html, body{
             justify-content: center;
         }
 
-        .galeriaImg a{
-            width: 30%;
+        /* Mallorca */
+            .galeriaImg a{
+                width: 30%;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                padding: 2% 0% 0% 0%;
+            }
+
+            .galeriaImg a:hover{
+                background-color: rgb(253, 216, 143);
+            }
+        /* Fin Mallorca */
+
+        /* Ibiza */
+        .galeriaImg .aIbiza{
+            width: 40%;
             text-align: center;
             text-decoration: none;
             color: black;
             padding: 2% 0% 0% 0%;
         }
 
-        .galeriaImg a:hover{
+        .galeriaImg .aIbiza:hover{
             background-color: rgb(253, 216, 143);
         }
-
+        /* Fin Ibiza */
         .galeriaImg a img{
             width: 90%;
             height: 80%;
@@ -274,6 +284,7 @@ html, body{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
+                justify-content: center;
             }
             
             .posts li {
@@ -309,17 +320,23 @@ html, body{
                 [value="Montuiri"]:checked ~ .filtrador [for="Montuiri"],
                 [value="Santa"]:checked ~ .filtrador [for="Santa"],
                 [value="Costitx"]:checked ~ .filtrador [for="Costitx"],
+                [value="SantJosep"]:checked ~ .filtrador [for="SantJosep"],
+                [value="Eivissa"]:checked ~ .filtrador [for="Eivissa"],
+                [value="SantJoan"]:checked ~ .filtrador [for="SantJoan"],
                 /* Tipo */
                 [value="Poblado"]:checked ~ .filtrador [for="Poblado"],
                 [value="Ciudad"]:checked ~ .filtrador [for="Ciudad"],
                 [value="Necropolis"]:checked ~ .filtrador [for="Necropolis"],
                 [value="Monumento"]:checked ~ .filtrador [for="Monumento"],
                 [value="Santuario"]:checked ~ .filtrador [for="Santuario"],
+                [value="Cueva"]:checked ~ .filtrador [for="Cueva"],
                 /* Epoca */
                 [value="Talaiotica"]:checked ~ .filtrador [for="Talaiotica"],
                 [value="Romana"]:checked ~ .filtrador [for="Romana"],
                 [value="Post-talaiotica"]:checked ~ .filtrador [for="Post-talaiotica"],
-                [value="Prehistorica"]:checked ~ .filtrador [for="Prehistorica"] {
+                [value="Prehistorica"]:checked ~ .filtrador [for="Prehistorica"],
+                [value="Cartagines"]:checked ~ .filtrador [for="Cartagines"],
+                [value="Fenicia"]:checked ~ .filtrador [for="Fenicia"] {
                     background-color: #d79e47;
                     color: #fff;
                 }
@@ -332,17 +349,23 @@ html, body{
                 [value="Montuiri"]:checked ~ .posts li:not([data-category~="Montuiri"]),
                 [value="Santa"]:checked ~ .posts li:not([data-category~="Santa"]),
                 [value="Costitx"]:checked ~ .posts li:not([data-category~="Costitx"]),
+                [value="SantJosep"]:checked ~ .posts li:not([data-category~="SantJosep"]),
+                [value="Eivissa"]:checked ~ .posts li:not([data-category~="Eivissa"]),
+                [value="SantJoan"]:checked ~ .posts li:not([data-category~="SantJoan"]),
                 /* Tipo */
                 [value="Poblado"]:checked ~ .posts li:not([data-category~="Poblado"]),
                 [value="Ciudad"]:checked ~ .posts li:not([data-category~="Ciudad"]),
                 [value="Necropolis"]:checked ~ .posts li:not([data-category~="Necropolis"]),
                 [value="Monumento"]:checked ~ .posts li:not([data-category~="Monumento"]),
                 [value="Santuario"]:checked ~ .posts li:not([data-category~="Santuario"]),
+                [value="Cueva"]:checked ~ .posts li:not([data-category~="Cueva"]),
                 /* Epoca */
                 [value="Talaiotica"]:checked ~ .posts li:not([data-category~="Talaiotica"]),
                 [value="Romana"]:checked ~ .posts li:not([data-category~="Romana"]),
                 [value="Post-talaiotica"]:checked ~ .posts li:not([data-category~="Post-talaiotica"]),
-                [value="Prehistorica"]:checked ~ .posts li:not([data-category~="Prehistorica"]) {
+                [value="Prehistorica"]:checked ~ .posts li:not([data-category~="Prehistorica"]),
+                [value="Cartagines"]:checked ~ .posts li:not([data-category~="Cartagines"]),
+                [value="Fenicia"]:checked ~ .posts li:not([data-category~="Fenicia"]){
                     display: none;
                 }
         /* Fin rules */
@@ -388,3 +411,72 @@ html, body{
         float: right;
     }
 /* Fin contenido pagina informacion de yacimientos */
+
+
+
+@media screen and (max-width: 500px) {
+    /* Nav header */
+        .ulnav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .ulnav li{
+            width: 100%;
+            margin-left: 0%;
+        }
+    /*Fin nav header */
+
+    /* Pagina inicio */
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .article{
+            width: 90%;
+            text-align: center;
+            margin-left: 5%;
+        }
+
+        .article h2{
+            font-size: 20px;
+        }
+    /* Fin pagina inicio */
+
+    /* Contenido pagina informacion de yacimientos */
+        .titulo{
+            font-size: 40px;
+            text-decoration: underline;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .imgYacimiento{
+            border:black 4px solid;
+            width: 90%;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+
+        .info p{
+            font-size: 20px;
+            padding: 0% 3%;
+            margin-top: 1%;
+        }
+
+        .contenido iframe{
+            height: 50%;
+            width: 100%;
+        }
+    /* Fin contenido pagina informacion de yacimientos */
+}
