@@ -5,6 +5,13 @@ html, body{
     flex-direction: column;
 }
 
+@media screen and (min-width: 360px) and (max-width:800px) {
+}
+
+
+
+
+
 /* header */
         header{
             background-color: rgb(98, 62, 21);
@@ -126,6 +133,14 @@ html, body{
 
 
 
+        /* Fin submenu barra navegacion */
+
+    /* Fin barra navegacion */
+
+/* Fin header */
+
+
+
 /* footer */
     footer{
         background-color: rgb(128, 106, 83);
@@ -138,6 +153,9 @@ html, body{
         .redSocial{
             margin: 1% 5%;
         }
+/* Fin footer */
+
+
 /* Fin footer */
 
 
@@ -208,7 +226,14 @@ html, body{
 /* Fin contenido pagina inicio */
 
 
+/* Fin contenido pagina inicio */
 
+
+
+/* Contenido pagina islas */
+    .contenidoIslas{
+        background-color: rgb(234, 217, 184);
+    }
 /* Contenido pagina islas */
     .contenidoIslas{
         background-color: rgb(234, 217, 184);
@@ -219,7 +244,19 @@ html, body{
             padding: 0%;
             margin: 0%;
         }
+    /* Submenu */
+        .navSelect{
+            padding: 0%;
+            margin: 0%;
+        }
 
+        .select{
+            width: 100%;
+            background-color: grey;
+            color: black;
+            text-align: center;
+            list-style-type: none;
+        }
         .select{
             width: 100%;
             background-color: grey;
@@ -236,7 +273,18 @@ html, body{
             line-height:50px;
             font-size: 200%;
         }
+        .select a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            line-height:50px;
+            font-size: 200%;
+        }
 
+        .select a:hover{
+            background-color: rgb(179, 175, 175);
+        }
         .select a:hover{
             background-color: rgb(179, 175, 175);
         }
@@ -248,7 +296,17 @@ html, body{
             justify-content: center;
             padding: 0%;
         }
+        .select ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0%;
+        }
 
+        .select ul li{
+            width: 33.5%;
+        }
         .select ul li{
             width: 33.5%;
         }
@@ -260,7 +318,26 @@ html, body{
             width: 100%;
             line-height:50px;
         }
+        .select ul li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            line-height:50px;
+        }
 
+        .select ul li a:hover{
+            background-color: rgb(179, 175, 175);
+        }
+    /* Fin submenu */
+
+    h2{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 50px;
+        padding: 0%;
+        margin-bottom: 0%;
+    }
         .select ul li a:hover{
             background-color: rgb(179, 175, 175);
         }
@@ -283,41 +360,23 @@ html, body{
             justify-content: center;
         }
 
-        /* Mallorca */
-            .galeriaImg a{
-                width: 30%;
-                text-align: center;
-                text-decoration: none;
-                color: black;
-                padding: 2% 0% 0% 0%;
-            }
+        .galeriaImg a{
+            width: 30%;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            padding: 2% 0% 0% 0%;
+        }
 
-            .galeriaImg a:hover{
-                background-color: rgb(253, 216, 143);
-            }
+        .galeriaImg a:hover{
+            background-color: rgb(253, 216, 143);
+        }
 
-            .galeriaImg a img{
-                width: 90%;
-                height: 80%;
-                border:black 4px solid;
-            }
-
-        /* Fin Mallorca */
-
-        /* Ibiza */
-            .galeriaImg .aIbiza{
-                width: 40%;
-                text-align: center;
-                text-decoration: none;
-                color: black;
-                padding: 2% 0% 0% 0%;
-            }
-
-            .galeriaImg .aIbiza:hover{
-                background-color: rgb(253, 216, 143);
-            }
-        /* Fin Ibiza */
-        
+        .galeriaImg a img{
+            width: 90%;
+            height: 80%;
+            border:black 4px solid;
+        }
     /* Fin galeria yacimientos */
 
         .elemento{
@@ -369,7 +428,6 @@ html, body{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                justify-content: center;
             }
             
             .posts li {
@@ -405,23 +463,17 @@ html, body{
                 [value="Montuiri"]:checked ~ .filtrador [for="Montuiri"],
                 [value="Santa"]:checked ~ .filtrador [for="Santa"],
                 [value="Costitx"]:checked ~ .filtrador [for="Costitx"],
-                [value="SantJosep"]:checked ~ .filtrador [for="SantJosep"],
-                [value="Eivissa"]:checked ~ .filtrador [for="Eivissa"],
-                [value="SantJoan"]:checked ~ .filtrador [for="SantJoan"],
                 /* Tipo */
                 [value="Poblado"]:checked ~ .filtrador [for="Poblado"],
                 [value="Ciudad"]:checked ~ .filtrador [for="Ciudad"],
                 [value="Necropolis"]:checked ~ .filtrador [for="Necropolis"],
                 [value="Monumento"]:checked ~ .filtrador [for="Monumento"],
                 [value="Santuario"]:checked ~ .filtrador [for="Santuario"],
-                [value="Cueva"]:checked ~ .filtrador [for="Cueva"],
                 /* Epoca */
                 [value="Talaiotica"]:checked ~ .filtrador [for="Talaiotica"],
                 [value="Romana"]:checked ~ .filtrador [for="Romana"],
                 [value="Post-talaiotica"]:checked ~ .filtrador [for="Post-talaiotica"],
-                [value="Prehistorica"]:checked ~ .filtrador [for="Prehistorica"],
-                [value="Cartagines"]:checked ~ .filtrador [for="Cartagines"],
-                [value="Fenicia"]:checked ~ .filtrador [for="Fenicia"] {
+                [value="Prehistorica"]:checked ~ .filtrador [for="Prehistorica"] {
                     background-color: #d79e47;
                     color: #fff;
                 }
@@ -434,23 +486,17 @@ html, body{
                 [value="Montuiri"]:checked ~ .posts li:not([data-category~="Montuiri"]),
                 [value="Santa"]:checked ~ .posts li:not([data-category~="Santa"]),
                 [value="Costitx"]:checked ~ .posts li:not([data-category~="Costitx"]),
-                [value="SantJosep"]:checked ~ .posts li:not([data-category~="SantJosep"]),
-                [value="Eivissa"]:checked ~ .posts li:not([data-category~="Eivissa"]),
-                [value="SantJoan"]:checked ~ .posts li:not([data-category~="SantJoan"]),
                 /* Tipo */
                 [value="Poblado"]:checked ~ .posts li:not([data-category~="Poblado"]),
                 [value="Ciudad"]:checked ~ .posts li:not([data-category~="Ciudad"]),
                 [value="Necropolis"]:checked ~ .posts li:not([data-category~="Necropolis"]),
                 [value="Monumento"]:checked ~ .posts li:not([data-category~="Monumento"]),
                 [value="Santuario"]:checked ~ .posts li:not([data-category~="Santuario"]),
-                [value="Cueva"]:checked ~ .posts li:not([data-category~="Cueva"]),
                 /* Epoca */
                 [value="Talaiotica"]:checked ~ .posts li:not([data-category~="Talaiotica"]),
                 [value="Romana"]:checked ~ .posts li:not([data-category~="Romana"]),
                 [value="Post-talaiotica"]:checked ~ .posts li:not([data-category~="Post-talaiotica"]),
-                [value="Prehistorica"]:checked ~ .posts li:not([data-category~="Prehistorica"]),
-                [value="Cartagines"]:checked ~ .posts li:not([data-category~="Cartagines"]),
-                [value="Fenicia"]:checked ~ .posts li:not([data-category~="Fenicia"]){
+                [value="Prehistorica"]:checked ~ .posts li:not([data-category~="Prehistorica"]) {
                     display: none;
                 }
         /* Fin rules */
@@ -498,83 +544,55 @@ html, body{
 /* Fin contenido pagina informacion de yacimientos */
 
 
+*{box-sizing:border-box;}
 
-@media screen and (max-width: 500px) {
-    /* Nav header */
-        .ulnav{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-        }
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:rgb(198, 154, 93);
+}
 
-        .ulnav li{
-            width: 100%;
-            margin-left: 0%;
-        }
-    /*Fin nav header */
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
 
-    /* Pagina inicio */
-        section{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
 
-        .article{
-            width: 90%;
-            text-align: center;
-            margin-left: 5%;
-        }
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(132, 69, 3);
+} 
 
-        .article h2{
-            font-size: 20px;
-        }
-    /* Fin pagina inicio */
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
 
-    /* Contenido pagina informacion de yacimientos */
-        .titulo{
-            font-size: 40px;
-            text-decoration: underline;
-            font-weight: bold;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .info{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .imgYacimiento{
-            border:black 4px solid;
-            width: 90%;
-            margin-top: 2%;
-            margin-left: 5%;
-        }
-
-        .info p{
-            font-size: 20px;
-            padding: 0% 3%;
-            margin-top: 1%;
-        }
-
-        .contenido iframe{
-            height: 50%;
-            width: 100%;
-        }
-    /* Fin contenido pagina informacion de yacimientos */
-    
-    /* Contenido pagina islas */
-        /* Submenu */
-            .select ul{
-                display: flex;
-                flex-direction: column;
-            }
-
-            .select ul li{
-                width: 100%;
-            }
-        /* Fin submenu */
-    /* Fin contenido pagina islas */
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
 }
