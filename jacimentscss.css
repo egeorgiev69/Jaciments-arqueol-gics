@@ -5,12 +5,6 @@ html, body{
     flex-direction: column;
 }
 
-@media screen and (min-width: 360px) and (max-width:800px) {
-}
-
-
-
-
 
 /* header */
         header{
@@ -60,47 +54,12 @@ html, body{
         .linav a:hover{
             background-color: rgb(112, 109, 103);
         }
-    /* Barra navegación */
-        nav{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .ulnav{
-            list-style-type: none;
-            margin: 0%;
-            padding: 0%;
-            overflow: hidden;
-            text-align: center;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            flex-direction: row;
-            width: 100%;
-        }
-        .linav {
-            background-color: black;
-            width: 25%;
-            margin: 0% 2% 2% 2%;
-        }
-        .linav a{
-            line-height:50px;
-            display: block;
-            color: bisque;
-            text-align: center;
-            text-decoration: none;
-            height: 50px;
-            width: 100%;
-        }
-        .linav a:hover{
-            background-color: rgb(112, 109, 103);
-        }
 
         /* Submenu barra de navegacion */
             .linav ul {
                 display:none;
                 position:absolute;
-                min-width:140px;
+                min-width:170px;
                 list-style-type: none;
                 z-index: 1;
             }
@@ -110,28 +69,6 @@ html, body{
             .linav:hover > ul {
                 display:block;
             }
-        /* Submenu barra de navegacion */
-            .linav ul {
-                display:none;
-                position:absolute;
-                min-width:140px;
-                list-style-type: none;
-                z-index: 1;
-            }
-            .linav ul li{
-                background-color: black;
-            }
-            .linav:hover > ul {
-                display:block;
-            }
-
-        /* Fin submenu barra navegacion */
-
-    /* Fin barra navegacion */
-
-/* Fin header */
-
-
 
         /* Fin submenu barra navegacion */
 
@@ -156,34 +93,9 @@ html, body{
 /* Fin footer */
 
 
-/* Fin footer */
-
-
 
 /* Contenido pagina inicio */
-    section{
-        background-image: url(imagenes/fondo.webp);
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        position: relative;
-        justify-content: center;
-    } 
-/* Contenido pagina inicio */
-    section{
-        background-image: url(imagenes/fondo.webp);
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        position: relative;
-        justify-content: center;
-    } 
-/* Contenido pagina inicio */
-    section{
+    .sectionInicio{
         background-image: url(imagenes/fondo.webp);
         width: 100%;
         height: auto;
@@ -202,38 +114,20 @@ html, body{
         text-decoration: none;
         color: black;
     }
-    .article{
-        width: 40%;
-        height: 50%;
-        text-align: center;
-        margin: 2% 2%;
-        text-decoration: none;
-        color: black;
-    }
 
     .article:hover{
         background-color: rgb(237, 196, 149);
     }
-    .article:hover{
-        background-color: rgb(237, 196, 149);
+
+    .imgArt{
+        margin-top: 5%;
+        width: 90%;
+        border: 5px rgb(143, 102, 56) solid;
     }
-
-        .imgArt{
-            margin-top: 5%;
-            width: 90%;
-            border: 5px rgb(143, 102, 56) solid;
-        }
-/* Fin contenido pagina inicio */
-
-
 /* Fin contenido pagina inicio */
 
 
 
-/* Contenido pagina islas */
-    .contenidoIslas{
-        background-color: rgb(234, 217, 184);
-    }
 /* Contenido pagina islas */
     .contenidoIslas{
         background-color: rgb(234, 217, 184);
@@ -244,19 +138,7 @@ html, body{
             padding: 0%;
             margin: 0%;
         }
-    /* Submenu */
-        .navSelect{
-            padding: 0%;
-            margin: 0%;
-        }
 
-        .select{
-            width: 100%;
-            background-color: grey;
-            color: black;
-            text-align: center;
-            list-style-type: none;
-        }
         .select{
             width: 100%;
             background-color: grey;
@@ -273,18 +155,7 @@ html, body{
             line-height:50px;
             font-size: 200%;
         }
-        .select a{
-            display: block;
-            text-decoration: none;
-            color: black;
-            width: 100%;
-            line-height:50px;
-            font-size: 200%;
-        }
 
-        .select a:hover{
-            background-color: rgb(179, 175, 175);
-        }
         .select a:hover{
             background-color: rgb(179, 175, 175);
         }
@@ -296,28 +167,11 @@ html, body{
             justify-content: center;
             padding: 0%;
         }
-        .select ul{
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            justify-content: center;
-            padding: 0%;
-        }
 
         .select ul li{
             width: 33.5%;
         }
-        .select ul li{
-            width: 33.5%;
-        }
 
-        .select ul li a{
-            display: block;
-            text-decoration: none;
-            color: black;
-            width: 100%;
-            line-height:50px;
-        }
         .select ul li a{
             display: block;
             text-decoration: none;
@@ -331,19 +185,7 @@ html, body{
         }
     /* Fin submenu */
 
-    h2{
-        text-align: center;
-        text-decoration: underline;
-        font-size: 50px;
-        padding: 0%;
-        margin-bottom: 0%;
-    }
-        .select ul li a:hover{
-            background-color: rgb(179, 175, 175);
-        }
-    /* Fin submenu */
-
-    h2{
+    .contenidoIslas h2{
         text-align: center;
         text-decoration: underline;
         font-size: 50px;
@@ -376,6 +218,14 @@ html, body{
             width: 90%;
             height: 80%;
             border:black 4px solid;
+        }
+        
+        .galeriaImg .aIbiza{
+            width: 40%;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            padding: 2% 0% 0% 0%;
         }
     /* Fin galeria yacimientos */
 
@@ -428,6 +278,7 @@ html, body{
                 display: flex;
                 flex-direction: row;
                 width: 100%;
+                justify-content: center;
             }
             
             .posts li {
@@ -463,17 +314,23 @@ html, body{
                 [value="Montuiri"]:checked ~ .filtrador [for="Montuiri"],
                 [value="Santa"]:checked ~ .filtrador [for="Santa"],
                 [value="Costitx"]:checked ~ .filtrador [for="Costitx"],
+                [value="SantJosep"]:checked ~ .filtrador [for="SantJosep"],
+                [value="Eivissa"]:checked ~ .filtrador [for="Eivissa"],
+                [value="SantJoan"]:checked ~ .filtrador [for="SantJoan"],
                 /* Tipo */
                 [value="Poblado"]:checked ~ .filtrador [for="Poblado"],
                 [value="Ciudad"]:checked ~ .filtrador [for="Ciudad"],
                 [value="Necropolis"]:checked ~ .filtrador [for="Necropolis"],
                 [value="Monumento"]:checked ~ .filtrador [for="Monumento"],
                 [value="Santuario"]:checked ~ .filtrador [for="Santuario"],
+                [value="Cueva"]:checked ~ .filtrador [for="Cueva"],
                 /* Epoca */
                 [value="Talaiotica"]:checked ~ .filtrador [for="Talaiotica"],
                 [value="Romana"]:checked ~ .filtrador [for="Romana"],
                 [value="Post-talaiotica"]:checked ~ .filtrador [for="Post-talaiotica"],
-                [value="Prehistorica"]:checked ~ .filtrador [for="Prehistorica"] {
+                [value="Prehistorica"]:checked ~ .filtrador [for="Prehistorica"],
+                [value="Fenicia"]:checked ~ .filtrador [for="Fenicia"],
+                [value="Cartagines"]:checked ~ .filtrador [for="Cartagines"] {
                     background-color: #d79e47;
                     color: #fff;
                 }
@@ -486,17 +343,23 @@ html, body{
                 [value="Montuiri"]:checked ~ .posts li:not([data-category~="Montuiri"]),
                 [value="Santa"]:checked ~ .posts li:not([data-category~="Santa"]),
                 [value="Costitx"]:checked ~ .posts li:not([data-category~="Costitx"]),
+                [value="SantJosep"]:checked ~ .posts li:not([data-category~="SantJosep"]),
+                [value="Eivissa"]:checked ~ .posts li:not([data-category~="Eivissa"]),
+                [value="SantJoan"]:checked ~ .posts li:not([data-category~="SantJoan"]),
                 /* Tipo */
                 [value="Poblado"]:checked ~ .posts li:not([data-category~="Poblado"]),
                 [value="Ciudad"]:checked ~ .posts li:not([data-category~="Ciudad"]),
                 [value="Necropolis"]:checked ~ .posts li:not([data-category~="Necropolis"]),
                 [value="Monumento"]:checked ~ .posts li:not([data-category~="Monumento"]),
                 [value="Santuario"]:checked ~ .posts li:not([data-category~="Santuario"]),
+                [value="Cueva"]:checked ~ .posts li:not([data-category~="Cueva"]),
                 /* Epoca */
                 [value="Talaiotica"]:checked ~ .posts li:not([data-category~="Talaiotica"]),
                 [value="Romana"]:checked ~ .posts li:not([data-category~="Romana"]),
                 [value="Post-talaiotica"]:checked ~ .posts li:not([data-category~="Post-talaiotica"]),
-                [value="Prehistorica"]:checked ~ .posts li:not([data-category~="Prehistorica"]) {
+                [value="Prehistorica"]:checked ~ .posts li:not([data-category~="Prehistorica"]),
+                [value="Fenicia"]:checked ~ .posts li:not([data-category~="Fenicia"]),
+                [value="Cartagines"]:checked ~ .posts li:not([data-category~="Cartagines"]) {
                     display: none;
                 }
         /* Fin rules */
@@ -513,22 +376,22 @@ html, body{
         padding: 2%;
     }
 
-        .titulo{
-            font-size: 40px;
-            text-decoration: underline;
-            font-weight: bold;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+    .titulo{
+        font-size: 40px;
+        text-decoration: underline;
+        font-weight: bold;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-        .info{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-        .imgYacimiento{
-            border:black 4px solid;
-        }
+    .imgYacimiento{
+        border:black 4px solid;
+    }
 
     .info p{
         font-size: 25px;
@@ -543,63 +406,222 @@ html, body{
     }
 /* Fin contenido pagina informacion de yacimientos */
 
+/* Pagina contactanos */
+    *{box-sizing:border-box;}
 
-*{box-sizing:border-box;}
+    .sectionForm{
+        background-image: url(imagenes/fondo.webp);
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 
-section{
-    background-image: url(imagenes/fondo.webp);
-    width: 100%;
-    margin-bottom: 10%;
-}
+    form{
+        width:300px;
+        padding:16px;
+        border-radius:10px;
+        margin:auto;
+        background-color:rgb(255, 184, 85);
+    }
+
+    form label{
+        width:72px;
+        font-weight:bold;
+        display:inline-block;
+    }
+
+    form input[type="text"],
+    form input[type="email"]{
+        width:180px;
+        padding:3px 10px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;
+        margin:8px 0;
+        display:inline-block;
+    }
+
+    form input[type="submit"]{
+        width:100%;
+        padding:8px 16px;
+        margin-top:32px;
+        border:1px solid #000;
+        border-radius:5px;
+        display:block;
+        color:#fff;
+        background-color:rgb(132, 69, 3);
+    } 
+
+    form input[type="submit"]:hover{
+        cursor:pointer;
+    }
+
+    textarea{
+        width:100%;
+        height:100px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;			
+        margin:8px 0;
+        resize:none;
+        display:block;
+    }
+/* Fin pagina contactanos */
 
 
-form{
-	width:300px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-	background-color:rgb(255, 184, 85);
-}
+@media screen and (max-width: 500px) {
+    /* Nav header */
+        .ulnav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
 
-form label{
-	width:72px;
-	font-weight:bold;
-	display:inline-block;
-}
+        .ulnav li{
+            width: 100%;
+            margin-left: 0%;
+        }
 
-form input[type="text"],
-form input[type="email"]{
-	width:180px;
-	padding:3px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	margin:8px 0;
-	display:inline-block;
-}
+        /* Submenu */
+        .linav ul {
+            display:none;
+            position:absolute;
+            min-width:170px;
+            list-style-type: none;
+            z-index: -999;
+        }
+        /* Fin submenu */
+    /*Fin nav header */
 
-form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:rgb(132, 69, 3);
-} 
+    /* Pagina inicio */
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-form input[type="submit"]:hover{
-	cursor:pointer;
-}
+        .article{
+            width: 90%;
+            text-align: center;
+            margin-left: 5%;
+        }
 
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-	resize:none;
-	display:block;
+        .article h2{
+            font-size: 30px;
+        }
+    /* Fin pagina inicio */
+
+    /* Contenido pagina informacion de yacimientos */
+        .titulo{
+            font-size: 40px;
+            text-decoration: underline;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .contenido{
+            text-align: center;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .imgYacimiento{
+            border:black 4px solid;
+            width: 90%;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .info p{
+            font-size: 20px;
+            padding: 0% 3%;
+            margin-top: 1%;
+        }
+        .contenido iframe{
+            height: 50%;
+            width: 100%;
+        }
+    /* Fin contenido pagina informacion de yacimientos */
+
+    /* Contenido pagina islas */
+        /* Submenu */
+            .select ul{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .select ul li{
+                width: 100%;
+            }
+        /* Fin submenu */
+
+        /* Galeria yacimientos */
+            .galeriaImg{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+            }
+            
+            .galeriaImg a{
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                padding: 2% 0% 0% 0%;
+            }
+
+            .galeriaImg p{
+                font-size: 30px;
+                margin-top: 0%;
+            }
+
+            .galeriaImg .aIbiza{
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                padding: 2% 0% 0% 0%;
+            }
+        /* Fin galeria yacimientos */
+
+        /* filtrador */
+            .filtrador{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .filtrador li{
+                text-align: center;
+                width: 80%;
+                margin-left: 10%;
+            }
+        /* Fin filtrador */
+
+        /* posts de las imagenes */
+            .posts{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .posts li {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+            }
+                
+            .posts li p{
+                font-size: 30px;
+                margin-top: 0%;
+            }
+        /* Fin posts */
+    /* Fin contenido pagina islas */
 }
