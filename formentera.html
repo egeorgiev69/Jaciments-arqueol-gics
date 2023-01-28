@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yacimientos-formentera</title>
     <link rel="stylesheet" href="jacimentscss.css" type="text/css">
+    <meta name="description" content="Yacimientos de las islas baleares">
+    <meta name="keywords" content="Yacimientos">
+    <meta name="author" content="Guiem Calafell">
+    <meta name="author" content="Eric Georgiev Velkov">
+    <meta name="Copyright" content="CopyrightEricGuiem">
 </head>
 <body>
     <header>
@@ -25,7 +30,79 @@
             </ul>
         </nav>
     </header>
-    
+    <div class="contenidoIslas">
+        <ul class="navSelect">
+            <li class="select"><a href="#forment">Yacimientos de Formentera</a>
+                <ul>
+                    <li><a href="#epoca">Por epocas</a></li>
+                    <li><a href="#tipo">Por tipo</a></li>
+                    <li><a href="#municipio">Por municipio</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2><a name="forment">Yacimientos de Formentera</a></h2>
+        <div class="galeriaImg">
+            <a href="Formentera/yacimiento1-formentera.html">
+                <img src="imagenes/ca-na-costra.jpg" alt="Megalitico de ca na costra">
+                <p>Megalitico de ca na costra</p>
+            </a>
+        </div>
+
+        <h2><a name="epoca">Por epoca</a></h2>
+        <div class="elemento">
+            <input type="radio" id="bronce" name="categories" value="bronce" checked>
+
+            <ol class="filtrador">
+                <li><label for="bronce">De bronce</label></li>
+            </ol>
+
+            <ol class="posts">
+                <li data-category="bronce">
+                    <a href="Formentera/yacimiento1-formentera.html">
+                        <img src="imagenes/ca-na-costra.jpg" alt="Megalitico de ca na costra">
+                        <p>Megalitico de ca na costra</p>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <h2><a name="tipo">Por tipo</a></h2>
+        <div class="elemento">
+            <input type="radio" id="Monolito" name="categories" value="Monolito">
+
+            <ol class="filtrador">
+                <li><label for="Monolito">Monolito</label></li>
+            </ol>
+
+            <ol class="posts">
+                <li data-category="Monolito">
+                    <a href="Formentera/yacimiento1-formentera.html">
+                        <img src="imagenes/ca-na-costra.jpg" alt="Megalitico de ca na costra">
+                        <p>Megalitico de ca na costra</p>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <h2><a name="municipio">Por municipio</a></h2>
+        <div class="elemento">
+            <input type="radio" id="formentera" name="categories" value="formentera">
+
+            <ol class="filtrador">
+                <li><label for="formentera">Formentera</label></li>
+            </ol>
+
+            <ol class="posts">
+                <li data-category="formentera">
+                    <a href="Formentera/yacimiento1-formentera.html">
+                        <img src="imagenes/ca-na-costra.jpg" alt="Megalitico de ca na costra">
+                        <p>Megalitico de ca na costra</p>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
     <footer> 
         <p>Copyright © 2023 - Yacimientos Arqueologicos de las Islas Baleares | Todos los derechos están reservados</p>
         <a href="https://www.instagram.com" target="_blank"><img src="imagenes/instagram.png" alt="instagram" class="redSocial" height="30px" width="30px"></a>
